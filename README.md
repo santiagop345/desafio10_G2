@@ -18,4 +18,4 @@ _ Sasowsky María Carolina
 
 _ Segovia Etcheverry Laura Noemi
 
-_ Luque Jorge Rolando 
+
