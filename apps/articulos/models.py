@@ -44,7 +44,7 @@ class Articulo (models.Model):
     categoria = models.ForeignKey(Categoria, on_delete=models.SET_NULL, null=True, default='Sin categoría')
     imagen = models.ImageField(null=True, blank=True, upload_to='media', default='static/post_default.png')
     fecha_creacion = models.DateTimeField(default=timezone.now)
-    etiqueta = models.ForeignKey(Etiqueta, null=True, default='Sin etiqueta')
+    etiqueta = models.ForeignKey(Etiqueta,on_delete=models.SET_NULL, null=True, default='Sin etiqueta')
 
     class Meta:
         ordering = ('-fecha_creacion',)
