@@ -21,4 +21,5 @@ from .views import index # importamos desde views la funcion index
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name= 'index'), # declaramos dentro de urlpatterns
+    
 ]
