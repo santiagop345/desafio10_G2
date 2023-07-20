@@ -6,7 +6,7 @@ from .models import Categoria, Etiqueta, Articulo
 @admin.register(Articulo)
 class ArticulosAdmin(admin.ModelAdmin):
 
-    list_display = ('id', 'titulo' ,'bajada', 'fecha_actualiz', 
+    list_display = ('id', 'titulo' ,'subtitulo', 'fecha_actualiz', 
                     'publicado', 'contenido', 'activo', 'categoria',
                     'imagen', 'fecha_creacion', 'etiqueta')
                     

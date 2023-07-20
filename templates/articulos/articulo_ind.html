@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block contenido %}
+
+    <center>
+        
+        <br>
+        <li>{{ articulos.titulo }}</li>
+        <li>{{ articulos.subtitulo }}</li>
+        <li>{{ articulos.categoria }}</li>
+
+        <br>
+        <li>{{ articulos.contenido }}</li>
+        <img src="{{ articulos.imagen.url }}" alt="">
+    </center>
+
+
+
+{% endblock %}
