@@ -36,7 +36,7 @@ class Etiqueta(models.Model):
 class Articulo (models.Model):
     
     titulo = models.CharField(max_length=250, null=False)
-    bajada = models.CharField(max_length=600, null=True, blank=True)
+    subtitulo = models.CharField(max_length=600, null=True, blank=True)
     fecha_actualiz = models.DateTimeField(auto_now_add=True)
     publicado = models.BooleanField(default = False)
     contenido = models.TextField(null=False)
