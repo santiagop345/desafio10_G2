@@ -10,9 +10,12 @@
         <li>{{ articulos.subtitulo }}</li>
         <li>{{ articulos.categoria }}</li>
 
-        <br>
         <li>{{ articulos.contenido }}</li>
         <img src="{{ articulos.imagen.url }}" alt="">
+        <br>
+        <a id="boton_post" href="{% url 'apps.posts:delete_post' id=articulo_ind.id %}">
+            <button>Eliminar Noticia</button>
+        </a>
     </center>
 
 
