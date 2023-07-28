@@ -1,0 +1,343 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Web Studio Bootstrap theme</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/jquery.fancybox.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/slit-slider.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+        <script src="{% static 'assets/js/modernizr-2.6.2.min.js' %}"></script>
+
+    </head>
+	
+    <body id="body">
+
+		<div id="preloader">
+            <div class="loder-box">
+            	<div class="battery"></div>
+            </div>
+		</div>
+
+
+        <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+					<div class="navbar-brand">
+						<a href="#body"><img src="{% static 'assets/img/footerlogo.png' %}" height="50"></a>
+					</div>
+					<!-- /logo -->
+                </div>
+
+				<!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li><a href="#service">Login</a></li>
+                        <li><a href="#body">Inicio</a></li>
+                        <li><a href="#portfolio">Noticias</a></li>
+						<li><a href="#about">Acerca de</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+						<li><a href="#">Preguntas Frecuentes</a></li>
+                    </ul>
+                </nav>
+				<!-- /main nav -->
+				
+            </div>
+        </header>
+		
+		<main class="site-content" role="main">
+
+		
+		<section id="home-slider">
+            <div id="slider" class="sl-slider-wrapper">
+
+				<div class="sl-slider">
+				
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+
+						<div class="bg-img bg-img-1"></div>
+	
+					</div>
+					
+					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+					
+						<div class="bg-img bg-img-2"></div>
+						
+					</div>
+					
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+						
+						<div class="bg-img bg-img-3"></div>
+
+					</div>
+
+				</div><!-- /sl-slider -->
+
+                <!--
+                <nav id="nav-arrows" class="nav-arrows">
+                    <span class="nav-arrow-prev">Previous</span>
+                    <span class="nav-arrow-next">Next</span>
+                </nav>
+                -->
+
+                <nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
+                    <a href="javascript:;" class="sl-prev">
+                        <i class="fa fa-angle-left fa-3x"></i>
+                    </a>
+                    <a href="javascript:;" class="sl-next">
+                        <i class="fa fa-angle-right fa-3x"></i>
+                    </a>
+                </nav>
+                
+
+				<nav id="nav-dots" class="nav-dots visible-xs visible-sm hidden-md hidden-lg">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+				</nav>
+
+			</div><!-- /slider-wrapper -->
+		</section>
+		
+
+			<section id="about" >
+				<div class="container">
+					<div class="row">
+						<div class="col-md-7 col-md-offset-1 wow animated fadeInLeft">
+							<div class="welcome-block">
+								<h3>Acerca de nuestro sitio web</h3>
+								<div class="message-body">
+									<p>En este espacio encontrarás información relacionada a los cambios que vienen afectando nuestro medio ambiente y el correspondiente impacto que estos cambios producen en nuestro planeta tierra. Asímismo compartiremos prácticas para el cuidado ambiental, compartiremos información sobre organizaciones abocadas al cuidado del mismo y mucho más!</p>
+								</div>
+								<a href="#" class="btn btn-border btn-effect pull-right">Aprende mas</a>
+							</div>
+						</div>
+						<div class="col-md-4 wow animated fadeInRight">
+							<div class="recent-works">
+								<h3>La importancia de cuidar el medio ambiente!</h3>
+								<div id="works">
+									<div class="work-item">
+										<p>Cada vez son más las personas concienciadas con la necesidad de cuidar del medioambiente para mejorar el planeta Tierra. <br> <br> En la actualidad, el cambio climático se ha convertido en uno de los temas más populares de los que todas las personas hablan. Un problema que afecta gravemente al clima del planeta Tierra, pero que por suerte todavía puede ser solucionado si todos los habitantes ponen de su parte.</p>
+									</div>
+									<div class="work-item">
+										<p>Contribuir al cuidado del medioambiente no requiere de grandes acciones, pero sí de pequeños gestos que ayuden a su protección. <br><br> No hay que sentirse desanimado por la aparición del cambio climático, sino todo lo contrario, ya que es el momento de activarse y comenzar a cuidar del medioambiente a través de algunas acciones que pueden realizarse desde casa.</p>
+									</div>
+									<div class="work-item">
+										<p>Por ejemplo con la llegada del invierno, lo más habitual es encender la calefacción en las viviendas para no pasar frío, pero ¿sabías que esto provoca la emisión anual de más de 400kg de dióxido de carbono a la atmósfera? <br><br> Para ello, un pequeño gesto consiste en encender menos la calefacción en casa y apostar más por el uso de prendas de abrigo (jerséis, sudaderas, etcétera) o de mantas.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="portfolio">
+				<div class="container">
+					<div class="row">
+					
+						<div class="sec-title text-center wow animated fadeInDown">
+							<h2>Artículos y Noticias</h2>
+							<p>Comparte y lee información referente al calentamiento global, flora y fauna regionales, prácticas para un mejor cuidado ambiental y mucho más!</p>
+						</div>
+						
+
+						<ul class="project-wrapper wow animated fadeInUp">
+							<li class="portfolio-item">
+								<img src="{% static 'assets/img/portfolio/bioplastico.jpg' %}" class="img-responsive" alt="Nulla sed sapien quis quam faucibus sagittis.Nulla sed sapien quis quam faucibus sagittis.">
+								<figcaption class="mask">
+									<h3>Lorem ipsum</h3>
+									<p>Nulla sed sapien quis quam faucibus sagittis. </p>
+								</figcaption>
+								<ul class="external">
+									<li><a class="fancybox" title="Lorem ipsum" data-fancybox-group="works" href="{% static 'assets/img/portfolio/bioplastico.jpg' %}"><i class="fa fa-search-plus"></i></a></li>
+									<li><a href=""><i class="fa fa-share"></i></a></li>
+								</ul>
+							</li>
+							
+							<li class="portfolio-item">
+								<img src="{% static 'assets/img/portfolio/beneficio_natural.jpg' %}" class="img-responsive" alt="Nulla sed sapien quis quam faucibus sagittis. Nulla sed sapien quis quam faucibus sagittis. ">
+								<figcaption class="mask">
+									<h3>Dolor sit</h3>
+									<p>Nulla sed sapien quis quam faucibus sagittis. </p>
+								</figcaption>
+								<ul class="external">
+									<li><a class="fancybox" title="Dolor sit" href="{% static 'assets/img/portfolio/beneficio_natural.jpg' %}" data-fancybox-group="works" ><i class="fa fa-search-plus"></i></a></li>
+									<li><a href=""><i class="fa fa-share"></i></a></li>
+								</ul>
+							</li>
+							
+							<li class="portfolio-item">
+								<img src="{% static 'assets/img/portfolio/manos_tierra.jpg' %}" class="img-responsive" alt="Nulla sed sapien quis quam faucibus sagittis.Nulla sed sapien quis quam faucibus sagittis.">
+								<figcaption class="mask">
+									<h3>Amet consectetur</h3>
+									<p>Nulla sed sapien quis quam faucibus sagittis. </p>
+								</figcaption>
+								<ul class="external">
+									<li><a class="fancybox" title="Amet consectetur" data-fancybox-group="works" href="{% static 'assets/img/portfolio/manos_tierra.jpg' %}"><i class="fa fa-search-plus"></i></a></li>
+									<li><a href=""><i class="fa fa-share"></i></a></li>
+								</ul>
+							</li>
+							
+							<li class="portfolio-item">
+								<img src="{% static 'assets/img/portfolio/proteccion_ambiental.jpg' %}" class="img-responsive" alt="Nulla sed sapien quis quam faucibus sagittis.Nulla sed sapien quis quam faucibus sagittis.">
+								<figcaption class="mask">
+									<h3>Nulla sed sapien</h3>
+									<p>Nulla sed sapien quis quam faucibus sagittis. </p>
+								</figcaption>
+								<ul class="external">
+									<li><a class="fancybox" title="Nulla sed sapien" data-fancybox-group="works" href="{% static 'assets/img/portfolio/proteccion_ambiental.jpg' %}"><i class="fa fa-search-plus"></i></a></li>
+									<li><a href=""><i class="fa fa-share"></i></a></li>
+								</ul>
+							</li>
+							
+							<li class="portfolio-item">
+								<img src="{% static 'assets/img/portfolio/cambio_climatico.jpg' %}" class="img-responsive" alt="Nulla sed sapien quis quam faucibus sagittis. Nulla sed sapien quis quam faucibus sagittis. ">
+								<figcaption class="mask">
+									<h3>Quis quam faucibus</h3>
+									<p>Nulla sed sapien quis quam faucibus sagittis. </p>
+								</figcaption>
+								<ul class="external">
+									<li><a class="fancybox" title="Quis quam faucibus" data-fancybox-group="works" href="{% static 'assets/img/portfolio/cambio_climatico.jpg' %}"><i class="fa fa-search-plus"></i></a></li>
+									<li><a href=""><i class="fa fa-share"></i></a></li>
+								</ul>
+							</li>
+							
+							<li class="portfolio-item">
+								<img src="{% static 'assets/img/portfolio/reciclar_mundo.jpg' %}" class="img-responsive" alt="Nulla sed sapien quis quam faucibus sagittis. Nulla sed sapien quis quam faucibus sagittis. ">
+								<figcaption class="mask">
+									<h3>Faucibus sagittis</h3>
+									<p>Nulla sed sapien quis quam faucibus sagittis. </p>
+								</figcaption>
+								<ul class="external">
+									<li><a class="fancybox" title="Faucibus sagittis" data-fancybox-group="works" href="{% static 'assets/img/portfolio/item6.jpg' %}"><i class="fa fa-search-plus"></i></a></li>
+									<li><a href=""><i class="fa fa-share"></i></a></li>
+								</ul>
+							</li>
+						</ul>
+						<br>
+						<center>
+							<button type="submit" id="submit" class="btn btn-blue btn-effect">Crear Noticia / Artículo</button>
+							<button type="submit" id="submit" class="btn btn-blue btn-effect">Ver Noticia / Artículo</button>
+							<button type="submit" id="submit" class="btn btn-blue btn-effect">Categorías</button>
+						</center>
+						</br>	
+					</div>
+				</div>
+			</section>
+	
+			<!-- Contact section -->
+			<section id="contact" >
+				<div class="container">
+					<div class="row">
+						
+						<div class="sec-title text-center wow animated fadeInDown">
+							<h2>Contacto</h2>
+							<p>Ingresa tu información y comunicate con nosotros!</p>
+						</div>
+						
+						
+						<div class="col-md-7 contact-form wow animated fadeInLeft">
+							<form action="#" method="post">
+								<div class="input-field">
+									<input type="text" name="name" class="form-control" placeholder="Full name">
+								</div>
+								<div class="input-field">
+									<input type="email" name="email" class="form-control" placeholder="Your email">
+								</div>
+								<div class="input-field">
+									<input type="text" name="subject" class="form-control" placeholder="Subject">
+								</div>
+								<div class="input-field">
+									<textarea name="message" class="form-control" placeholder="Your message"></textarea>
+								</div>
+						       	<button type="submit" id="submit" class="btn btn-blue btn-effect">Enviar</button>
+							</form>
+						</div>
+						
+						<div class="col-md-5 wow animated fadeInRight">
+							<address class="contact-details">
+								<h3>Contáctenos</h3>				
+								<p><i class="fa fa-pencil"></i>Grupo 2 - Comisión 5<span>CP 3500</span> <span>Resistencia, Chaco </span><span>Argentina</span></p><br>
+								<p><i class="fa fa-phone"></i>Phone: +54 (3624) 333-4444 </p>
+								<p><i class="fa fa-envelope"></i>nuestro@email.com</p>
+							</address>
+						</div>
+			
+					</div>
+				</div>
+			</section>
+		<!-- end Contact section -->
+
+		<!-- Footer section -->	
+		</footer>
+		<footer id="footer">
+			<div class="container">
+				<div class="row text-center">
+				<!-- logo -->
+					<div class="navbar-brand">
+						<a href="#body"><img src="{% static 'assets/img/footerlogo.png' %}" height="125"></a>
+					</div>
+				<!-- /logo -->
+					<div class="footer-content">
+						<div class="wow animated fadeInDown">
+							<p>SOBRE NOSOTROS</p>
+							<p>Grupo N° 2 - Eco Somos: Pequeñas acciones, grandes cambios. Juntos por un planeta sostenible</p>
+						</div>
+						<form action="#" method="post" class="subscribe-form wow animated fadeInUp">
+							<div class="input-field">
+								<input type="email" class="subscribe form-control" placeholder="Enter email">
+								<button type="submit" class="submit-icon">
+									<i class="fa fa-envelope fa-lg"></i>
+								</button>
+							</div>
+						</form>
+						<div class="footer-social">
+							<ul>
+								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-instagram fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.9s"><a href="#"><i class="fa fa-linkedin fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="1.2s"><a href="#"><i class="fa fa-youtube fa-3x"></i></a></li>
+							</ul>
+						</div>
+						
+						<p>Proyecto Final &copy; 2023 by <a href="http://www.gridgum.com">Grupo 2</a> </p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end Footer section -->
+
+        <script src="{% static 'assets/js/jquery-1.11.1.min.js' %}"></script>
+        <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.singlePageNav.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.fancybox.pack.js' %}"></script>
+		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.slitslider.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.ba-cond.min.js' %}"></script>
+        <script src="{% static 'assets/js/wow.min.js' %}"></script>
+        <script src="{% static 'assets/js/main.js' %}"></script>
+    </body>
+</html>
